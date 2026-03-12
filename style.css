@@ -1,0 +1,65 @@
+/* Configuração geral do corpo */
+body {
+    font-family: 'Georgia', serif; /* Fonte clássica para poemas */
+    background-color: #f4f1ea;     /* Cor de fundo tipo papel antigo */
+    color: #333;                  /* Cor do texto quase preto */
+    line-height: 1.6;             /* Espaçamento entre linhas */
+    margin: 0;
+   padding: 10px; /* Reduz a margem lateral no celular para ganhar espaço */
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc; /* Linha fina divisória */
+}
+
+/* Cartão do poema */
+.poema {
+    background: white;
+    width: 95%;      /* Ocupa quase toda a largura em telas pequenas */
+    max-width: 600px; /* Mas nunca passa de 600px em telas grandes (computador) */
+    padding: 20px;   /* Um pouco menos de preenchimento interno no celular */
+    margin: 15px auto; /* Diminui o espaço entre um poema e outro */
+    border-radius: 8px;           /* Arredonda os cantos */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* 3. Ajuste do Texto (Pre) */
+pre.corpo-poema {
+    text-align: center;
+    font-size: 1rem;      /* Tamanho de letra legível */
+    white-space: pre-wrap; /* ESSENCIAL: faz o verso "dobrar" se for maior que a tela */
+    word-wrap: break-word; 
+}
+
+.titulo-poema {
+    text-align: center;
+    color: #8b4513;               /* Cor marrom para o título */
+}
+
+/* Estilo do botão */
+.btn-curtir {
+    background: none;
+    border: 1px solid #8b4513;
+    padding: 5px 15px;
+    cursor: pointer;              /* Muda o cursor para a "mãozinha" */
+    transition: 0.3s;             /* Transição suave ao clicar */
+}
+
+.btn-curtir:hover {
+    background: #8b4513;          /* Muda cor ao passar o mouse */
+    color: white;
+}
+
+.data-poema {
+    text-align: center;
+    display: block;          /* Faz a data ocupar a linha sozinha */
+    font-size: 0.85rem;      /* Diminui um pouco o tamanho da fonte */
+    color: #888;             /* Cor cinza para ficar discreto */
+    font-style: italic;      /* Deixa em itálico para dar um charme */
+    margin-bottom: 20px;     /* Afasta a data do começo do poema */
+    text-transform: uppercase; /* Opcional: deixa em letras maiúsculas */
+    letter-spacing: 1px;     /* Espaçamento entre as letras */
+}
