@@ -31,3 +31,4 @@ btnModo.addEventListener('click', () => {
         btnModo.innerText = "🌙 Modo Escuro";
     }
 });
+
