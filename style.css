@@ -24,6 +24,9 @@ header {
     margin: 15px auto; /* Diminui o espaço entre um poema e outro */
     border-radius: 8px;           /* Arredonda os cantos */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    /* 2. Aplicamos a animação aos cartões de poema */
+    animation: aparecer 1s ease-out forwards; /* Dura 1 segundo, começa rápido e termina suave */
+
 }
 
 /* 3. Ajuste do Texto (Pre) */
@@ -62,6 +65,29 @@ pre.corpo-poema {
     margin-bottom: 20px;     /* Afasta a data do começo do poema */
     text-transform: uppercase; /* Opcional: deixa em letras maiúsculas */
     letter-spacing: 1px;     /* Espaçamento entre as letras */
+}
+/* 1. Criamos a "animação" chamada 'aparecer' */
+@keyframes aparecer {
+    from {
+        opacity: 0;            /* Começa invisível */
+        transform: translateY(20px); /* Começa um pouco abaixo da posição original */
+    }
+    to {
+        opacity: 1;            /* Termina totalmente visível */
+        transform: translateY(0);    /* Termina na posição certa */
+    }
+}
+
+/* Estilo do botão de alternar */
+.btn-modo {
+    background: #8b4513;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 10px;
 }
 
 /* Regras para quando o Modo Escuro estiver ativo */
