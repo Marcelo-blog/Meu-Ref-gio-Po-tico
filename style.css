@@ -63,3 +63,26 @@ pre.corpo-poema {
     text-transform: uppercase; /* Opcional: deixa em letras maiúsculas */
     letter-spacing: 1px;     /* Espaçamento entre as letras */
 }
+
+/* Regras para quando o Modo Escuro estiver ativo */
+body.dark-mode {
+    background-color: #1a1a1a; /* Fundo quase preto */
+    color: #e0e0e0;           /* Texto cinza claro */
+}
+
+body.dark-mode .poema {
+    background-color: #2d2d2d; /* Cartão do poema cinza escuro */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .titulo-poema {
+    color: #deb887;           /* Título em um tom de madeira clara */
+}
+
+body.dark-mode .corpo-poema {
+    color: #ccc;
+}
+
+body.dark-mode header {
+    border-bottom: 1px solid #444;
+}
