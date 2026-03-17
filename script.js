@@ -16,3 +16,18 @@ botoes.forEach(botao => {
         }
     });
 });
+
+const btnModo = document.getElementById('toggle-dark-mode');
+const body = document.body;
+
+btnModo.addEventListener('click', () => {
+    // Liga/Desliga a classe dark-mode no body
+    body.classList.toggle('dark-mode');
+
+    // Troca o texto do botão para o leitor saber o que vai acontecer
+    if (body.classList.contains('dark-mode')) {
+        btnModo.innerText = "☀️ Modo Claro";
+    } else {
+        btnModo.innerText = "🌙 Modo Escuro";
+    }
+});
